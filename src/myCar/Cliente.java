@@ -6,13 +6,13 @@ public class Cliente {
 	private String nombres;
 	private String rut;
 	private String email;
-	private int fono;
+	private String fono;
 	
 	public Cliente () {
 		
 	}
 	
-	public Cliente (String apellidos, String nombres, String rut, String email, int fono) {
+	public Cliente (String apellidos, String nombres, String rut, String email, String fono) {
 		
 		this.apellidos = apellidos;
 		this.nombres = nombres;
@@ -53,11 +53,11 @@ public class Cliente {
 		this.email = email;
 	}
 
-	public int getFono() {
+	public String getFono() {
 		return fono;
 	}
 
-	public void setFono(int fono) {
+	public void setFono(String fono) {
 		this.fono = fono;
 	}
 	

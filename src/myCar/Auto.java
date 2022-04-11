@@ -2,20 +2,22 @@ package myCar;
 
 public class Auto {
 
-	private String ppu; //placa patente única
+	private String ppu; //placa patente ï¿½nica
 	private String marca;
 	private String modelo;
-	private int yearFabricacion; //año fabricacion
+	private int yearFabricacion; //aï¿½o fabricacion
+	private Cliente cliente; //dueÃ±o de auto
 	
 	public Auto () {
 		
 	}
 	
-	public Auto (String ppu, String marca, String modelo, int yearFabricacion) {
+	public Auto (String ppu, String marca, String modelo, int yearFabricacion, Cliente cliente) {
 		this.ppu = ppu;
 		this.marca = marca;
 		this.modelo = modelo;
 		this.yearFabricacion = yearFabricacion;
+		this.setCliente(cliente);
 	}
 
 	public String getPpu() {
@@ -48,6 +50,13 @@ public class Auto {
 
 	public void setYearFabricacion(int yearFabricacion) {
 		this.yearFabricacion = yearFabricacion;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 }
  

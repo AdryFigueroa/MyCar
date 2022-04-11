@@ -1,22 +1,20 @@
 package myCar;
 
-import java.time.LocalDateTime;
-
 public class Mantencion {
 
 	private String tipoMant; //tipo 
 	private String observaciones;
 	private Float precio;
-	private static LocalDateTime fecha;
+	private Auto auto;
 	
 	public Mantencion() {
 		
 	}
-	public Mantencion(String tipoMant, String observaciones, Float precio, LocalDateTime fecha) {
+	public Mantencion(String tipoMant, String observaciones, Float sprecio, Auto auto) {
 		this.tipoMant = tipoMant;
 		this.observaciones = observaciones;
 		this.precio = precio;
-		Mantencion.fecha = fecha;
+		this.setAuto(auto);
 	}
 	public String getTipoMant() {
 		return tipoMant;
@@ -36,11 +34,11 @@ public class Mantencion {
 	public void setPrecio(Float precio) {
 		this.precio = precio;
 	}
-	public static LocalDateTime getFecha() {
-		return fecha;
+	public Auto getAuto() {
+		return auto;
 	}
-	public static void setFecha(LocalDateTime fecha) {
-		Mantencion.fecha = fecha;
+	public void setAuto(Auto auto) {
+		this.auto = auto;
 	}
 	
 	}
